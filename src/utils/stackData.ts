@@ -10,6 +10,22 @@ import { FaDocker } from "react-icons/fa";
 
 export const stackData = [
   {
+    title: "React",
+    img: imgReact,
+  },
+  {
+    title: "JS",
+    img: imgJS,
+  },
+  {
+    title: "Styled Components",
+    img: imgStyled,
+  },
+  {
+    title: "Node JS",
+    img: imgNode,
+  },
+  {
     title: "HTML",
     img: imgHTML,
   },
@@ -17,23 +33,7 @@ export const stackData = [
     title: "CSS",
     img: imgCSS,
   },
-  {
-    title: "JS",
-    img: imgJS,
-  },
-  {
-    title: "Node JS",
-    img: imgNode,
-  },
-  {
-    title: "Styled Components",
-    img: imgStyled,
-  },
-  {
-    title: "React",
-    img: imgReact,
-  },
-  { title: "Vuejs", img: FaVuejs },
-  { title: "TypeScript", img: SiTypescript },
-  { title: "Docker", img: FaDocker },
+  // { title: "Vuejs", img: FaVuejs },
+  // { title: "TypeScript", img: SiTypescript },
+  // { title: "Docker", img: FaDocker },
 ];

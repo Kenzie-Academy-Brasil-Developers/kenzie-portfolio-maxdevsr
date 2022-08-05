@@ -64,6 +64,17 @@ export const ProjectsAreaSocialMediaMessage = styled("aside", {
   position: "sticky",
   top: "10rem",
 
+  div: {
+    display: "flex",
+    flexDirection: "column",
+    overflow: "auto",
+    height: "20rem",
+  },
+
+  img: {
+    width: "99%",
+  },
+
   "@mobile": {
     width: "100%",
     position: "static",

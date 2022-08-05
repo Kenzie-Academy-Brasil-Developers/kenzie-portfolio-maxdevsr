@@ -12,6 +12,8 @@ import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 // Page Style
+import { GrView } from "react-icons/gr";
+
 import {
   Header,
   HeaderContent,
@@ -23,7 +25,14 @@ import {
   ProjectsAreaContent,
   ProjectAreaWrapperColumns,
 } from "./style";
-
+import { ProjectLink } from "@/components/Project/style";
+import doYouKnow from "../../imgProject/doYouKnow.png";
+import nuKenzie from "../../imgProject/nuKenzie.png";
+import eccomerceRedux from "../../imgProject/eccomerceRedux.png";
+import formulario from "../../imgProject/formulario.png";
+import hamburgueria from "../../imgProject/hamburgueria.png";
+import kenzieHub from "../../imgProject/kenzieHub.png";
+import rickAndMorty from "../../imgProject/rickAndMorty.png";
 
 export const Home = (): JSX.Element => {
   return (
@@ -35,9 +44,13 @@ export const Home = (): JSX.Element => {
               Criando experiências por meio da tecnologia{" "}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              Sou estudante de programação FullStack na Kenzie Academy Brasil,
+              participei de diversos projetos resolvendo problemas de alto nível
+              e desenvolvendo habilidades em busca da minha qualificação
+              profissional. Também estudo Analise e Desenvolvimento de Sistemas
+              na Faculdade Pitágoras, aonde eu busco também um conhecimento em
+              tópicos que abrangem toda a computação, para assim me tornar um
+              profissional mais completo.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
@@ -53,7 +66,7 @@ export const Home = (): JSX.Element => {
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
+            Ferramentas que domino/tenho conhecimento
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
@@ -70,9 +83,10 @@ export const Home = (): JSX.Element => {
                 Vamos trocar uma ideia?
               </Text>
               <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+                No linkedIn eu venho postando meu aprendizado, compartilhando o
+                conhecimento que venho adquirindo, passo a passo, como uma forma
+                de mostrar meu empenho e meus resultados para voces.
+                <p>Conheça meu perfil profissional !</p>
               </Text>
               <Button
                 type="primary"
@@ -82,6 +96,77 @@ export const Home = (): JSX.Element => {
               >
                 Acessar perfil no LinkedIn
               </Button>
+              <p></p>
+              <Text as="h2" type="heading4" color="grey1">
+                Links (deploy) de projetos feitos aqui na Kenzie
+              </Text>
+              <div className="testandoCarrosel">
+                <Text as="p" type="body1" color="grey2">
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://do-you-know-react-app-five.vercel.app/"
+                    >
+                      <GrView /> DoYouKnow
+                      <img src={doYouKnow} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-entrega-s1-nu-kenzie-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> NuKenzie
+                      <img src={nuKenzie} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-atividade-s1-buscando-mais-personagens-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> Render API Rick and Morty
+                      <img src={rickAndMorty} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-entrega-s1-hamburgueria-da-kenzie-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> Ecommerce Hamburgueria
+                      <img src={hamburgueria} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-atividade-s2-formulario-de-cadastro-maxdevsr-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> Formulario de cadastro de usuarios
+                      <img src={formulario} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-entrega-s3-kenzieshop-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> EcommerceKenzie SHOP com REDUX
+                      <img src={eccomerceRedux} />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://react-entrega-s2-kenzie-hub-maxdevsr.vercel.app/"
+                    >
+                      <GrView /> Kenzie HUB
+                      <img src={kenzieHub} />
+                    </a>
+                  </div>
+                </Text>
+              </div>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
               <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
